@@ -1,0 +1,232 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    
+    width: 100vw;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.logo {
+    width: 20vw;
+    margin-right: 22vw;
+}
+
+.menu-icon, .search-icon, .cart-icon {
+    width: 7vw;
+}
+
+main > img:nth-of-type(1) {
+    width: 100vw;
+    height: auto;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-bottom: 0vh;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+main p:nth-of-type(1) {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.black-button {
+    width: 90vw;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+main img:nth-of-type(2) {
+    width: 100vw;
+    height: auto;
+    margin-top: 5vh;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0vh;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+.black-button2 {
+    width: 30vw;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 35vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+main img:nth-of-type(3) {
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+
+.black-button3 {
+    width: 30vw;
+    height: 7vh;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 8vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+main img:nth-of-type(4) {
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.carrousellist{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 5vw;
+    overflow: hidden; /* Voorkomt scrollen */
+    width: 100vw; /* Zorgt ervoor dat de UL de breedte van het venster niet overschrijdt */
+}
+
+.carrouselfoto1 {
+    width: 80vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.carrouselfoto2 {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+}
+
+.white-button1 {
+    width: 50vw;
+    height: 7vh;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 20vw;
+    border: 2px solid black;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.middentekst{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15vh;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.kleinetekst{
+    color: 2A2A2A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1vh;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
