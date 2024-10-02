@@ -64,7 +64,8 @@ nav ul li {
     width: 7vw;
 }
 
-main > img:nth-of-type(1) {
+/* eerste foto van schoenen */
+main section:nth-of-type(1) img { 
     width: 100vw;
     height: auto;
 }
@@ -77,7 +78,8 @@ h1{
     font-size: 28px;
 }
 
-main p:nth-of-type(1) {
+/* the northface official goretex */
+main section:nth-of-type(1) p {
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 8vw;
@@ -113,7 +115,8 @@ p{
     border-radius: 25px;
 }
 
-main img:nth-of-type(2) {
+/* tweede foto van vrouw die klimt */
+main section:nth-of-type(2) img {
     width: 100vw;
     height: auto;
     margin-top: 5vh;
@@ -143,7 +146,8 @@ h2{
     border-radius: 25px;
 }
 
-main img:nth-of-type(3) {
+/* derde foto van 2 kinderen */
+main section:nth-of-type(3) img {
     width: 90vw;
     height: auto;
     margin-left: 5vw;
@@ -166,7 +170,8 @@ main img:nth-of-type(3) {
     border-radius: 25px;
 }
 
-main img:nth-of-type(4) {
+/* vierde foto van jonge met geblond haar */
+main section:nth-of-type(4) img {
     width: 90vw;
     height: auto;
     margin-left: 5vw;

@@ -23,12 +23,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   surface plane
+  -filteren
+  -lettergroottes
+  -extra microinteractie
+  -animatie (loading of feedback)
+  -(misschien svg icons animeren)
  
 </details>
-
-
-
-
 
 ## Je website
 
@@ -43,12 +44,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/tnffullpage.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Heren winterschoenen pagina
   <img src="readme-images/tnffullpage2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
-
-
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
@@ -69,8 +68,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Het hamburger menu werkt erg goed.
   -De alt text bij fotos kan beter.
 
-</details>
+  WCAG Checklist
+  <img src="readme-images/WCAGCL1.jpg" width="375px">
+  <img src="readme-images/WCAGCL2.jpg" width="375px">
+  <img src="readme-images/WCAGCL3.jpg" width="375px">
+  <img src="readme-images/WCAGCL4.jpg" width="375px">
+  <img src="readme-images/WCAGCL5.jpg" width="375px">
 
+</details>
 
 
 ## Breakdownschets (week 1)
@@ -78,19 +83,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   (De blauwe vierkanten zijn sections)
 
-  ### de hele pagina: 
+  ### Homepagina: 
   <img src="readme-images/breakdownschetsfed.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
+  ### Hamburgermenu: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
 </details>
-
-
-
 
 
 ## Voortgang 1 (week 2)
@@ -109,7 +108,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | Splinter       | Maryam             | Uri          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
