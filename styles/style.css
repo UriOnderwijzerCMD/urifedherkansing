@@ -178,14 +178,23 @@ main section:nth-of-type(4) img {
     margin-top: 5vh;
 }
 
+
+/* CARROUSEL */
+
 .carrousellist{
     margin: 0;
     padding: 0;
     display: flex;
     list-style-type: none;
     gap: 5vw;
-    overflow: hidden; /* Voorkomt scrollen */
-    width: 100vw; /* Zorgt ervoor dat de UL de breedte van het venster niet overschrijdt */
+    overflow: hidden;
+    width: 100vw; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+}
+
+.carrousellist::-webkit-scrollbar {
+    display: none; /* Voor Chrome, Safari en Opera */
 }
 
 .carrouselfoto1 {
@@ -201,7 +210,19 @@ main section:nth-of-type(4) img {
     margin-top: 5vh;
 }
 
-.white-button1 {
+.carrouselfoto4 {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+    /* margin-right: 5vw; */
+}
+
+.carrousellist li {
+    scroll-snap-align: center; 
+    text-align: center; 
+}
+
+.carousel-button {
     width: 50vw;
     height: 7vh;
     background-color: white;
@@ -210,13 +231,33 @@ main section:nth-of-type(4) img {
     margin-top: 3vh;
     margin-left: 20vw;
     border: 2px solid black;
-    font-size: 3vh;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: 500;
 }
+
+.carousel-button2 {
+    width: 50vw;
+    height: 7vh;
+    background-color: white;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 25vw;
+    border: 2px solid black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 500;
+}
+/* EINDE CARROUSEL */
+
+
 
 .middentekst{
     color: black;

@@ -109,9 +109,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | Splinter       | Maryam             | Uri          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | dit bespreken  | en dit             | Telt drop    | en dan ik dat    |
+  | en dat ook nog | dit als er tijd is | down pijl als| dit wil ik zeker |
+  | ...            | ...                | animatie     | ...              |
+
+  Uri
+  -In mijn hamburgermenu zitten er ontzettend veel steeds herhaalde onderdelen, moet ik die echt allemaal uitwerken?
+  -Wanneer mag je classes gebruiken?
+  
+  Maryam
+  -Ik heb moeite met mijn carousel, ik krijg mijn bg-img niet te zien.
+  -
+
+  Splinter
+  -
+  -
+
 
 
   ### Verslag van meeting
