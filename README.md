@@ -130,10 +130,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik vond het voortgangsgesprek erg helpvol, ik had van te voren vooral algemene vragen, zoals of ik echt alle dropdowns in mijn header moest maken, gelukkig hoeft dat niet. Verder had ik ook vragen over de 'netheid' van mijn code, dus het gebruik van classes, de manier van positioneren met margins en de meerdere css bestanden. En hier heb ik nog veel te doen, ik moet de volgende punten in mijn code verbeteren:
+  -Het gebruiken van classes.
+  -Het manier van positioneren (Hoe ik het nu doe met margins is niet netjes.)
+  -De kleuren in mijn root definieren.
+  -Meerdere css bestanden aanmaken.
 
 </details>
 
@@ -148,7 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Code net maken was makkelijker dan gedacht, het selecteren van code in css in eigenlijk heel makkelijk als je sections gebruikt, je kan makkelijk de section selecteren.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -159,6 +160,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+  Mijn vragen:
+  -Hoe moet ik mijn dropdowns precies maken? Is het een button of een id/label?
+  -Waar in de html moet mijn hamburger menu precies?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

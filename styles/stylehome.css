@@ -1,0 +1,246 @@
+:root {
+	/* startje */
+	--color-text:black;
+    --color-textblackbutton:white;
+	--color-background:#eee;
+    --color-blackbutton: black;
+
+    --color-whitebutton: white;
+    --color-textwhitebutton:black;
+}
+
+
+
+
+
+
+/* eerste foto van schoenen */
+main section:nth-of-type(1) img { 
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-bottom: 0vh;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+/* the northface official goretex */
+main section:nth-of-type(1) p {
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p{
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 1vh;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+main section:nth-of-type(1) button,
+main section:nth-of-type(6) button {
+    width: 90vw;
+    height: 7vh;
+    background-color: var(--color-blackbutton);
+    color: var(--color-textblackbutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/* tweede foto van vrouw die klimt */
+
+main section:nth-of-type(2) img {
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+}
+
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0vh;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+main section:nth-of-type(2) button {
+    width: 30vw;
+    height: 7vh;
+    background-color: var(--color-blackbutton);
+    color: var(--color-textblackbutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 35vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/* derde foto van 2 kinderen */
+
+/* main section:nth-of-type(3){
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+} */
+
+main section:nth-of-type(3) img {
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+
+main section:nth-of-type(3) button,
+main section:nth-of-type(4) button {
+    width: 30vw;
+    height: 7vh;
+    background-color: var(--color-blackbutton);
+    color: var(--color-textblackbutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 8vw;
+    border: none;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/* vierde foto van jonge met geblond haar */
+main section:nth-of-type(4) img {
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+
+/* CARROUSEL */
+
+main section:nth-of-type(5) ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 5vw;
+    overflow: hidden;
+    width: 100vw; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+}
+
+main section:nth-of-type(5) ul::-webkit-scrollbar {
+    display: none; /* Voor Chrome, Safari en Opera */
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(1) img {
+    width: 80vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(2) img, main section:nth-of-type(5) ul li:nth-of-type(3) img {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(4) img {
+    width: 80vw;
+    height: auto;
+    margin-top: 5vh;
+    /* margin-right: 5vw; */
+}
+
+main section:nth-of-type(5) ul li {
+    scroll-snap-align: center; 
+    text-align: center; 
+}
+
+main section:nth-of-type(5) ul li:nth-of-type(1) button,
+main section:nth-of-type(5) ul li:nth-of-type(2) button,
+main section:nth-of-type(5) ul li:nth-of-type(3) button,
+main section:nth-of-type(5) ul li:nth-of-type(4) button {
+    width: 50vw;
+    height: 7vh;
+    background-color: var(--color-whitebutton);
+    color: var(--color-textwhitebutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 20vw;
+    border: 2px solid black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.carousel-button2 {
+    width: 50vw;
+    height: 7vh;
+    background-color: var(--color-whitebutton);
+    color: var(--color-textwhitebutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3vh;
+    margin-left: 25vw;
+    border: 2px solid black;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 500;
+}
+/* EINDE CARROUSEL */
+
+
+
+main section:nth-of-type(6) h2{
+    color: var(--color-text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 15vh;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+main section:nth-of-type(6) p{
+    color: 2A2A2A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 1vh;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+
+main section:nth-of-type(7) button{
+    width: 100vw;
+}
