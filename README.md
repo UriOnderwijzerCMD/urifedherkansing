@@ -149,7 +149,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-  Code net maken was makkelijker dan gedacht, het selecteren van code in css in eigenlijk heel makkelijk als je sections gebruikt, je kan makkelijk de section selecteren.
+  Code net maken was makkelijker dan gedacht, het selecteren van code in css is eigenlijk heel makkelijk als je sections gebruikt, je kan makkelijk de section selecteren.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -166,11 +166,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+  Mijn vragen zijn goed beantwoord.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
 
 </details>
 
