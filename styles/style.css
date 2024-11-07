@@ -42,7 +42,7 @@ header {
     z-index: 1000;
 }
 
-nav ul {
+nav:nth-of-type(2) ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,7 +51,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+navnav:nth-of-type(2) ul li {
     margin: 0 15px;
 }
 
@@ -221,9 +221,9 @@ footer section:nth-of-type(3) form {
     margin-left: 6vw;
     margin-top: 4vw;
 
-    width: 20px;  /* Maak het checkbox-vakje groter */
+    width: 20px; 
     height: 20px;
-    cursor: pointer;  /* Wijzig de cursor naar een pointer bij hover */
+    cursor: pointer; 
   }
 
 
@@ -334,3 +334,79 @@ footer section:nth-of-type(6) li{
     font-weight: 400;
     margin-bottom: 14px;
 }
+
+
+ /* HAMBURGER MENU  */
+
+
+summary {
+    list-style: none; 
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+
+
+details[open] summary img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+  
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary img {
+    transition: transform 0.3s ease;
+}
+
+
+
+header details{
+
+    border-top: 1px solid lightgrey ;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+}
+
+header nav:nth-of-type(1) ul{
+    list-style-type: none;    
+    padding: 0;
+}
+
+header details summary img{
+    width: 3vw;
+}
+
+header nav:nth-of-type(1) li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:var(--color-lichtetext);
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+
+header nav:nth-of-type(1) {
+    /* IN EN UITKLAPPEN */
+    
+    position:fixed;
+    left:0;
+    right:0;
+    top:8vh;
+    bottom:40vh;
+    
+    translate:-100%;
+    transition:0.2s;
+  }
+
+
+  header nav:nth-of-type(1).toonMenu {
+    /* JOUW CODE HIER - stap 4 */
+    translate:0;
+    background-color: white;
+  }

@@ -163,17 +163,20 @@ main section:nth-of-type(3){
     
     display: grid;
     row-gap: 3vh;
+
+    margin: 0;
+    padding: 0;
 }
 
 main section:nth-of-type(3) img {
     width: 90vw;
     height: auto;
     margin-top: 15vh;
-
     grid-column-start: 1;
     grid-column-end: 6;
     margin: 0; 
     padding: 0; 
+    justify-self: center;
 }
 
 main section:nth-of-type(3) button,
@@ -199,6 +202,10 @@ main section:nth-of-type(4){
     width: 100%;
     display: grid;
     row-gap: 3vh;
+    margin: 0;
+    padding: 0;
+
+    /* grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr; */
 }
 
 /* vierde foto van jonge met geblond haar */
@@ -211,6 +218,7 @@ main section:nth-of-type(4) img {
     grid-column-end: 6;
     margin: 0; 
     padding: 0; 
+    justify-self: center;
 }
 
 

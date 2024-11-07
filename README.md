@@ -165,8 +165,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Waar in de html moet mijn hamburger menu precies?
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-  Mijn vragen zijn goed beantwoord.
+  Ik heb tijdens het voortgangsgesprek goed antwoord op mijn vragen gekregen, namelijk hoe ik de dropdowns met details summary moest maken en over de positionering die ik gebruikte. Hierdoor had ik alles wat ik nodig om de eerste pagina af te krijgen voor de accessibility test.
 
 
 </details>
