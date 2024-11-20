@@ -26,8 +26,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -filteren
   -lettergroottes
   -extra microinteractie
-  -animatie (loading of feedback)
-  -(misschien svg icons animeren)
+  -States van controls++ (forms, inputs, links…)
+  -svg icons animeren
+  -()has
  
 </details>
 

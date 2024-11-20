@@ -1,0 +1,267 @@
+
+
+main section:nth-of-type(1){
+    display: grid;
+    flex-direction: column; 
+    align-items: center;
+
+    grid-template-columns: 1rem 1fr 1fr 1fr 1rem; 
+    row-gap: 3vh;
+
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) p{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) a{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin: 0;
+    padding: 0;
+}
+
+main section:nth-of-type(1) h1{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-weight: 450;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* SECTION 2 */
+
+main section:nth-of-type(2){
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+main section:nth-of-type(2) button{
+    background-color: #fcfcfc;
+    color: var(--color-textwhitebutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 400;
+
+
+    padding: 5px;
+    width: 30%;
+}
+
+main section:nth-of-type(2) button:hover {
+    background-color: var(--color-blackbutton);
+    color: var(--color-textblackbutton);
+}
+
+button:hover img {
+    filter: invert(1); 
+}
+
+main section:nth-of-type(2) button img{
+    width: 5vw;
+    margin-left: 1vw;
+}
+
+main section:nth-of-type(2) p{
+    color:var(--color-lichtetext);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+
+    margin: 0;
+}
+
+
+
+
+
+/* UL MET PRODUCTEN */
+
+
+main section:nth-of-type(3) ul {
+    display: grid; /* Grid layout voor de producten */
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen naast elkaar */
+    gap: 15px; /* Ruimte tussen de items */
+    padding: 10px;
+    list-style: none; /* Geen opsommingstekens */
+}
+
+main section:nth-of-type(3) li {
+    background-color: white;
+
+    display: flex; 
+    flex-direction: column; 
+    gap: 1em; 
+
+    position: relative;
+}
+
+/*  PRODUCT 1 */
+
+main section:nth-of-type(3) img {
+    max-width: 100%;
+    height: auto;
+}
+
+main section:nth-of-type(3) li:first-of-type img:nth-of-type(1) {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+
+main section:nth-of-type(3) li:first-of-type img:nth-of-type(2) {
+    max-width: 100%;
+    height: auto;
+
+    position:absolute;
+}
+
+main section:nth-of-type(3):has( [value="zwartgrijs"]:checked ) img[alt="Product1foto2"] {
+	z-index: 2;
+}
+
+/* EINDE PRODUCT 1 */
+
+
+main section:nth-of-type(3) ul > li > p:first-of-type {
+    color:var(--color-lichtetext);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* margin-top: 1vh; */
+    font-weight: 300;
+    font-size: 1em;
+
+    margin: 0;
+}
+
+main section:nth-of-type(3) ul > li > p:nth-of-type(2) {
+    color: var(--color-text);
+    font-size: 1em;
+    /* margin-bottom: 10px; */
+    font-weight: 500;
+
+    margin: 0;
+}
+
+main section:nth-of-type(3) button {
+    background-color: var(--color-whitebutton);
+    color: var(--color-textwhitebutton);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    font-weight: 500;
+
+
+    padding: 5px;
+    width: 60%;
+}
+
+main section:nth-of-type(3) button:hover {
+    background-color: var(--color-blackbutton);
+    color: var(--color-textblackbutton);
+
+}
+
+
+/* RADIOBUTTONS */
+
+main section:nth-of-type(3) form {
+	display:flex;
+	gap:1em;
+}
+
+
+input[type="radio"] {
+	appearance:none;
+	
+	width:1.5em;
+	height:1.5em;
+	margin:0;
+	background-color:white;
+	border-radius:50%;
+	
+	display:grid;
+	place-items:center;
+}
+
+/* 1eproduct */
+
+input[type="radio"][value="beigegrijs"] {
+	background-image:linear-gradient(45deg, rgb(140, 140, 75) 50%, rgb(65, 65, 65) 0);
+}
+
+input[type="radio"][value="zwartgrijs"] {
+	background-image:linear-gradient(45deg, black 50%, gray 0);
+}
+
+/* 2eproduct */
+
+input[type="radio"][value="bruinrood"] {
+	background-image:linear-gradient(45deg, rgb(152, 100, 43) 50%, rgb(182, 11, 49) 0);    
+}
+
+input[type="radio"][value="zwart"] {
+background-color:black;
+}
+
+/* 3eproduct */
+
+input[type="radio"][value="blauworanje"] {
+	background-image:linear-gradient(45deg, rgb(9, 108, 159), rgb(178, 106, 44) );
+}
+
+/* 4eproduct */
+
+input[type="radio"][value="bruinzwart"] {
+	background-image:linear-gradient(45deg, rgb(67, 41, 19) 50%, black 0);    
+}
+
+input[type="radio"][value="beige"] {
+background-color:rgb(202, 173, 131);
+}
+
+
+
+input[type="radio"]:focus-visible {
+	outline: solid 1px black;
+	outline-offset:.2em;
+}
+
+input[type="radio"]:checked {
+	outline: 1px solid black; 
+    outline-offset: 3px; 
+}
+
+
+
+
+input[type="radio"]:checked::after {
+	/* content:""; */
+	
+	display:block;
+	width:1em;
+	/* aspect-ratio: 1; */
+	
+	background-color:white;
+	border:solid 1px black;
+	border-radius:50%;
+}
+

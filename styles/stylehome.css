@@ -1,15 +1,13 @@
-:root {
-	/* startje */
-	--color-text:black;
-    --color-textblackbutton:white;
-	--color-background:#eee;
-    --color-blackbutton: black;
 
-    --color-whitebutton: white;
-    --color-textwhitebutton:black;
-}
 
 /* CENTREREN/POSITIONERING */
+
+body main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 
 main section:nth-of-type(1) {
     width: 100%;
@@ -19,6 +17,8 @@ main section:nth-of-type(1) {
 
     margin: 0;
     padding: 0;
+
+    grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
 
 }
 
@@ -34,7 +34,7 @@ main section:nth-of-type(1) img {
 }
 
 h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     font-weight: 500;
     font-size: 28px;   
     
@@ -48,6 +48,16 @@ h1{
 
 
 main section:nth-of-type(1) p {
+    font-family: var(--font-textroboto);
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+main section:nth-of-type(1) a {
     color: var(--color-text);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
@@ -56,9 +66,6 @@ main section:nth-of-type(1) p {
 
     grid-column-start: 2;
     grid-column-end: 5;
-    /* margin-left: 8vw;
-    margin-right: 8vw; */
-    /* margin-top: 1vh; */
 }
 
 main section:nth-of-type(1) button {
@@ -82,11 +89,15 @@ main section:nth-of-type(1) button {
 
 
 main section:nth-of-type(2) {
-    display: flex;
+    display: grid;
     flex-direction: column; 
     align-items: center;
 
-    
+    grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
+    row-gap: 3vh;
+
+    margin: 0;
+    padding: 0;
 }
 
 main section:nth-of-type(6) {
@@ -109,7 +120,7 @@ main section:nth-of-type(1) p,
 main section:nth-of-type(3) p,
 main section:nth-of-type(4) p {
     color: var(--color-text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     font-weight: 400;
     font-size: 20px;
     margin: 0;
@@ -129,7 +140,11 @@ main section:nth-of-type(4) p {
 main section:nth-of-type(2) img {
     width: 100%;
     height: auto;
-    margin-top: 5vh;
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin: 0; 
+    padding: 0; 
 }
 
 h2{
@@ -138,6 +153,10 @@ h2{
     font-weight: 500;
     font-size: 28px;
     text-align: center;
+    grid-column-end: 5;
+    grid-column-start: 2;
+
+    margin: 0;
 }
 
 main section:nth-of-type(2) button {
@@ -146,14 +165,15 @@ main section:nth-of-type(2) button {
     background-color: var(--color-blackbutton);
     color: var(--color-textblackbutton);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 3vh;
-    /* margin-left: 35vw; */
     border: none;
     font-size: 3vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+
+    grid-column-end: 4;
+    grid-column-start: 3;
 }
 
 /* derde foto van 2 kinderen */
@@ -166,6 +186,8 @@ main section:nth-of-type(3){
 
     margin: 0;
     padding: 0;
+
+    grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
 }
 
 main section:nth-of-type(3) img {
@@ -205,7 +227,8 @@ main section:nth-of-type(4){
     margin: 0;
     padding: 0;
 
-    /* grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr; */
+
+    grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
 }
 
 /* vierde foto van jonge met geblond haar */
@@ -224,9 +247,20 @@ main section:nth-of-type(4) img {
 
 /* CARROUSEL */
 
+main section:nth-of-type(5){
+    width: 100%;
+    display: grid;
+    row-gap: 3vh;
+    margin: 0;
+    padding: 0;
+
+
+    grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
+}
+
+
 main section:nth-of-type(5) ul{
-    width: 100vw;     
-    max-width: 100%;
+    width: 100%;     
     margin: 0;
     padding: 0;
     display: flex;
@@ -235,6 +269,16 @@ main section:nth-of-type(5) ul{
     overflow: hidden;
     overflow-x: auto; 
     scroll-snap-type: x mandatory;
+
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+main section:nth-of-type(5) ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vh;
 }
 
 main section:nth-of-type(5) ul::-webkit-scrollbar {
@@ -244,21 +288,13 @@ main section:nth-of-type(5) ul::-webkit-scrollbar {
 main section:nth-of-type(5) ul li:nth-of-type(1) img {
     width: 80vw;
     height: auto;
-    margin-left: 5vw;
-    margin-top: 5vh;
 }
 
-main section:nth-of-type(5) ul li:nth-of-type(2) img, main section:nth-of-type(5) ul li:nth-of-type(3) img {
-    width: 80vw;
-    height: auto;
-    margin-top: 5vh;
-}
-
+main section:nth-of-type(5) ul li:nth-of-type(2) img, 
+main section:nth-of-type(5) ul li:nth-of-type(3) img,
 main section:nth-of-type(5) ul li:nth-of-type(4) img {
     width: 80vw;
     height: auto;
-    margin-top: 5vh;
-    /* margin-right: 5vw; */
 }
 
 main section:nth-of-type(5) ul li {
@@ -275,8 +311,7 @@ main section:nth-of-type(5) ul li:nth-of-type(4) button {
     background-color: var(--color-whitebutton);
     color: var(--color-textwhitebutton);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 3vh;
-    margin-left: 20vw;
+    margin-left: 15vw;
     border: 2px solid black;
     font-size: 18px;
     display: flex;
@@ -284,6 +319,8 @@ main section:nth-of-type(5) ul li:nth-of-type(4) button {
     align-items: center;
     border-radius: 25px;
     font-weight: 500;
+
+    justify-self: center;
 }
 
 .carousel-button2 {
