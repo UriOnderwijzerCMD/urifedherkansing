@@ -22,16 +22,18 @@ main section:nth-of-type(1) {
 
 }
 
-main section:nth-of-type(1) img { 
+
+main section:nth-of-type(1) video { 
     width: 100%;
     height: auto;
-
+    max-width: 100%;
     grid-column-start: 1;
     grid-column-end: 6;
     margin: 0; 
     padding: 0; 
     
 }
+
 
 h1{
     font-family: var(--font-textroboto);
@@ -57,25 +59,17 @@ main section:nth-of-type(1) p {
     grid-column-end: 5;
 }
 
-main section:nth-of-type(1) a {
-    color: var(--color-text);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
 
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
 
 main section:nth-of-type(1) button {
     width: 80vw;
     height: 7vh;
     background-color: var(--color-blackbutton);
     color: var(--color-textblackbutton);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     border: none;
-    font-size: 3vh;
+    font-size: 1.5em;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,7 +142,7 @@ main section:nth-of-type(2) img {
 }
 
 h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     margin-bottom: 0vh;
     font-weight: 500;
     font-size: 28px;
@@ -164,9 +158,10 @@ main section:nth-of-type(2) button {
     height: 7vh;
     background-color: var(--color-blackbutton);
     color: var(--color-textblackbutton);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     border: none;
-    font-size: 3vh;
+    font-size: 1.5em;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,9 +202,10 @@ main section:nth-of-type(4) button {
     height: 7vh;
     background-color: var(--color-blackbutton);
     color: var(--color-textblackbutton);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     border: none;
-    font-size: 3vh;
+    font-size: 1.5em;
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,7 +306,7 @@ main section:nth-of-type(5) ul li:nth-of-type(4) button {
     height: 7vh;
     background-color: var(--color-whitebutton);
     color: var(--color-textwhitebutton);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     margin-left: 15vw;
     border: 2px solid black;
     font-size: 18px;
@@ -328,7 +324,7 @@ main section:nth-of-type(5) ul li:nth-of-type(4) button {
     height: 7vh;
     background-color: var(--color-whitebutton);
     color: var(--color-textwhitebutton);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-textroboto);
     margin-top: 3vh;
     margin-left: 25vw;
     border: 2px solid black;

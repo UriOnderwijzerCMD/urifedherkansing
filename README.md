@@ -23,8 +23,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   surface plane
-  -filteren
-  -lettergroottes
+  -Videos
   -extra microinteractie
   -States van controls++ (forms, inputs, links…)
   -svg icons animeren
@@ -209,12 +208,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb geleerd hoe ik radiobuttons moest maken, en verder nog wat punten om mijn code netter te maken zoals dat hoofdletters met css moeten. Ook heb ik mijn laatste vragen over grid gesteld, en dit begrijp ik nu helemaal.
 
 </details>
 
@@ -232,13 +226,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb eigenlijk alles wat ik bij dit project heb gedaan geleerd, vooral in de laatste 4 weken, ik heb het gevoel dat ik code nu veel beter begrijp en makkelijker zonder hulp kan coderen. In de toekomst als ik weer moet coderen weet ik nu veel beter hoe ik netter kan coderen met grids, roots en selectoren.
+  Verder ben ik trots op de product pagina met de radiobuttons dat dat me gelukt is.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat me niet gelukt is een filteroptie maken, omdat ik hier niet genoeg tijd voor over had, dit vind ik best wel jammer omdat het een leuke test geweest zou zijn.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -252,12 +247,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Vooral de presentaties en Codepens op DLO.
+  2. https://www.a11yproject.com/posts/how-to-hide-content/ om h2s te hiden.
+  3. Sanne voor de basis van de radiobuttons
 
 </details>
