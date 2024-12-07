@@ -148,7 +148,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   Code net maken was makkelijker dan gedacht, het selecteren van code in css is eigenlijk heel makkelijk als je sections gebruikt, je kan makkelijk de section selecteren.
 
   ### Agenda voor meeting
@@ -194,7 +193,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Voor dit gesprek heb ik de JS en CSS van mijn hamburgermenu afgemaakt, dit was met hulp van de presentatie en codepen op dlo veel makkelijker dan gedacht, dus hier ben ik wel blij mee. Verder heb ik snap ik grid nog niet helemaal, dus hier wil ik ook een paar vragen over stellen.
 
 
   ### Agenda voor meeting

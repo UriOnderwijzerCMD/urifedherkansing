@@ -9,19 +9,72 @@ body main {
 }
 
 
-main section:nth-of-type(1) {
-    width: 100%;
-
+/* ALGEMENE STIJLEN */
+main section{
+    background-color: var(--bg);
     display: grid;
     row-gap: 3vh;
-
     margin: 0;
     padding: 0;
-
     grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
-
+    width: 100%;
 }
 
+main section h1{
+    font-family: var(--font-textroboto);
+    color: var(--text);
+    font-weight: 500;
+    font-size: var(--h1size);   
+    grid-column-start: 2;
+    grid-column-end: 5;
+    margin: 0;
+}
+
+main section h2{
+    font-family: var(--font-textroboto);
+    color: var(--text);
+    margin-bottom: 0vh;
+    font-weight: 500;
+    font-size: var(--h2size);
+    text-align: center;
+    grid-column-end: 5;
+    grid-column-start: 2;
+    margin: 0;
+}
+
+main section p {
+    font-family: var(--font-textroboto);
+    color: var(--text);
+    font-size: var(--psize);
+    font-weight: 400;
+    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+main section img{
+    height: auto;
+    margin: 0; 
+    padding: 0; 
+}
+
+main section button{
+    background-color: var(--bgbutton);
+    color: var(--textbutton);
+    font-family: var(--font-textroboto);
+    font-size: var(--buttonfontsize);    
+    font-weight: 300;    
+    border: none;
+    border-radius: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;  
+}
+/* EINDE ALGEMENE STIJLEN */
+
+
+/* MAIN SECTION 1 */
 
 main section:nth-of-type(1) video { 
     width: 100%;
@@ -31,229 +84,54 @@ main section:nth-of-type(1) video {
     grid-column-end: 6;
     margin: 0; 
     padding: 0; 
-    
 }
 
-
-h1{
-    font-family: var(--font-textroboto);
-    font-weight: 500;
-    font-size: 28px;   
-    
+main section:nth-of-type(1) button { 
     grid-column-start: 2;
     grid-column-end: 5;
-    /* margin-left: 8vw; */
-    margin: 0;
-
 
 }
+/* EINDE SECTION 1 */
 
 
-main section:nth-of-type(1) p {
-    font-family: var(--font-textroboto);
-    color: var(--color-text);
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
-    grid-column-start: 2;
-    grid-column-end: 5;
-}
-
-
-
-main section:nth-of-type(1) button {
-    width: 80vw;
-    height: 7vh;
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
-    font-family: var(--font-textroboto);
-    border: none;
-    font-size: 1.5em;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-
-    grid-column-end: 5;
-    grid-column-start: 2;
-}
-
-
-
-
-main section:nth-of-type(2) {
-    display: grid;
-    flex-direction: column; 
-    align-items: center;
-
-    grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
-    row-gap: 3vh;
-
-    margin: 0;
-    padding: 0;
-}
-
-main section:nth-of-type(6) {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-}
-
-
-
-
-/* eerste foto van schoenen */
-
-
-
-
-
-/* the northface official goretex */
-main section:nth-of-type(1) p,
-main section:nth-of-type(3) p,
-main section:nth-of-type(4) p {
-    color: var(--color-text);
-    font-family: var(--font-textroboto);
-    font-weight: 400;
-    font-size: 20px;
-    margin: 0;
-
-    grid-column-start: 2;
-    grid-column-end: 5;
-    
-    /* margin-left: 8vw;
-    margin-right: 8vw; */
-    /* margin-top: 1vh; */
-}
-
-
-
-/* tweede foto van vrouw die klimt */
+/* SECTION 2 */
 
 main section:nth-of-type(2) img {
     width: 100%;
-    height: auto;
-
     grid-column-start: 1;
-    grid-column-end: 6;
-    margin: 0; 
-    padding: 0; 
+    grid-column-end: 6; 
 }
 
-h2{
-    font-family: var(--font-textroboto);
-    margin-bottom: 0vh;
-    font-weight: 500;
-    font-size: 28px;
-    text-align: center;
-    grid-column-end: 5;
-    grid-column-start: 2;
-
-    margin: 0;
-}
 
 main section:nth-of-type(2) button {
-    width: 30vw;
-    height: 7vh;
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
-    font-family: var(--font-textroboto);
-    border: none;
-    font-size: 1.5em;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-
+    width: 6em;
+    grid-column-start: 3;    
     grid-column-end: 4;
-    grid-column-start: 3;
 }
 
-/* derde foto van 2 kinderen */
+/* EINDE SECTION 2 */
 
-main section:nth-of-type(3){
-    width: 100%;
-    
-    display: grid;
-    row-gap: 3vh;
+/* SECTION 3 EN 4 */
+/* DEZE ZIJN SAMEN OMDAT ZE ERG OP ELKAAR LIJKEN */
 
-    margin: 0;
-    padding: 0;
-
-    grid-template-columns: 2rem 1fr 1fr 1fr 2rem; 
-}
-
-main section:nth-of-type(3) img {
-    width: 90vw;
-    height: auto;
-    margin-top: 15vh;
+main section:nth-of-type(3) img,
+main section:nth-of-type(4) img {
+    width: 90%;
     grid-column-start: 1;
     grid-column-end: 6;
-    margin: 0; 
-    padding: 0; 
     justify-self: center;
 }
 
 main section:nth-of-type(3) button,
 main section:nth-of-type(4) button {
-    width: 30vw;
-    height: 7vh;
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
-    font-family: var(--font-textroboto);
-    border: none;
-    font-size: 1.5em;
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-
     grid-column-start: 2;
-    grid-column-end: 5;
-
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-main section:nth-of-type(4){
-    width: 100%;
-    display: grid;
-    row-gap: 3vh;
-    margin: 0;
-    padding: 0;
+/* EINDE SECTION 3 EN 4 */
 
-
-    grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
-}
-
-/* vierde foto van jonge met geblond haar */
-main section:nth-of-type(4) img {
-    width: 90vw;
-    height: auto;
-    margin-top: 5vh;
-
-    grid-column-start: 1;
-    grid-column-end: 6;
-    margin: 0; 
-    padding: 0; 
-    justify-self: center;
-}
-
-
-/* CARROUSEL */
-
-main section:nth-of-type(5){
-    width: 100%;
-    display: grid;
-    row-gap: 3vh;
-    margin: 0;
-    padding: 0;
-
-
-    grid-template-columns: 2rem 1fr 1fr 1fr 2rem;
-}
-
+/* MAIN SECTION 5 CARROUSEL */
 
 main section:nth-of-type(5) ul{
     width: 100%;     
@@ -265,7 +143,6 @@ main section:nth-of-type(5) ul{
     overflow: hidden;
     overflow-x: auto; 
     scroll-snap-type: x mandatory;
-
     grid-column-start: 2;
     grid-column-end: 5;
 }
@@ -281,16 +158,8 @@ main section:nth-of-type(5) ul::-webkit-scrollbar {
     display: none; 
 }
 
-main section:nth-of-type(5) ul li:nth-of-type(1) img {
+main section:nth-of-type(5) ul li img {
     width: 80vw;
-    height: auto;
-}
-
-main section:nth-of-type(5) ul li:nth-of-type(2) img, 
-main section:nth-of-type(5) ul li:nth-of-type(3) img,
-main section:nth-of-type(5) ul li:nth-of-type(4) img {
-    width: 80vw;
-    height: auto;
 }
 
 main section:nth-of-type(5) ul li {
@@ -298,44 +167,22 @@ main section:nth-of-type(5) ul li {
     text-align: center; 
 }
 
-main section:nth-of-type(5) ul li:nth-of-type(1) button,
-main section:nth-of-type(5) ul li:nth-of-type(2) button,
-main section:nth-of-type(5) ul li:nth-of-type(3) button,
-main section:nth-of-type(5) ul li:nth-of-type(4) button {
+main section:nth-of-type(5) ul li button {
+    background-color: var(--bgwbutton);
+    color: var(--textwbutton);
+    font-family: var(--font-textroboto);
+    font-size: var(--buttonfontsize);     
     width: 50vw;
     height: 7vh;
-    background-color: var(--color-whitebutton);
-    color: var(--color-textwhitebutton);
-    font-family: var(--font-textroboto);
     margin-left: 15vw;
-    border: 2px solid black;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25px;
-    font-weight: 500;
-
-    justify-self: center;
-}
-
-.carousel-button2 {
-    width: 50vw;
-    height: 7vh;
-    background-color: var(--color-whitebutton);
-    color: var(--color-textwhitebutton);
-    font-family: var(--font-textroboto);
-    margin-top: 3vh;
-    margin-left: 25vw;
-    border: 2px solid black;
-    font-size: 18px;
+    border: var(--borderwbutton);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     font-weight: 500;
 }
-/* EINDE CARROUSEL */
+/* EINDE SECTION 5 CARROUSEL */
 
 
 

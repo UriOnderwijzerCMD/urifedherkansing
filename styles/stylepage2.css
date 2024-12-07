@@ -1,13 +1,15 @@
 
+/* ALGEMENE STIJLEN */
 
+
+/* MAIN SECTION 1 */
 main section:nth-of-type(1){
+    background-color: var(--bg);
     display: grid;
     flex-direction: column; 
     align-items: center;
-
     grid-template-columns: 1rem 1fr 1fr 1fr 1rem; 
     row-gap: 3vh;
-
     margin: 0;
     padding: 0;
     padding-top: 20px;
@@ -35,10 +37,9 @@ main section:nth-of-type(1) h1{
     margin: 0;
     padding: 0;
 }
+/* EIND SECTION 1 */
 
-
-/* SECTION 2 */
-
+/* BEGIN SECTION 2 */
 main section:nth-of-type(2){
     display: flex;
     max-width: 100%;
@@ -48,8 +49,8 @@ main section:nth-of-type(2){
 }
 
 main section:nth-of-type(2) button{
-    background-color: #fcfcfc;
-    color: var(--color-textwhitebutton);
+    background-color: var(--bgwbutton);
+    color: var(--textwbutton);
     font-family: var(--font-textroboto);
     border: none;
     font-size: 1em;
@@ -58,15 +59,13 @@ main section:nth-of-type(2) button{
     align-items: center;
     border-radius: 25px;
     font-weight: 400;
-
-
     padding: 5px;
     width: 30%;
 }
 
 main section:nth-of-type(2) button:hover {
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
+    background-color: var(--bgbutton);
+    color: var(--textbutton);
 }
 
 button:hover img {
@@ -83,17 +82,11 @@ main section:nth-of-type(2) p{
     font-family: var(--font-textroboto);
     font-weight: 300;
     font-size: 1em;
-
     margin: 0;
 }
+/* EIND SECTION 3 */
 
-
-
-
-
-/* UL MET PRODUCTEN */
-
-
+/* SECTION 3 UL MET PRODUCTEN */
 main section:nth-of-type(3) ul {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
@@ -103,17 +96,14 @@ main section:nth-of-type(3) ul {
 }
 
 main section:nth-of-type(3) li {
-    background-color: white;
-
+    background-color: var(--bg);
     display: flex; 
     flex-direction: column; 
     gap: 1em; 
-
     position: relative;
 }
 
-/*  PRODUCT 1 */
-
+/*  PRODUCT MET WERKENDE RADIOS 1 */
 main section:nth-of-type(3) img {
     max-width: 100%;
     height: auto;
@@ -128,83 +118,72 @@ main section:nth-of-type(3) li:first-of-type img:nth-of-type(1) {
 main section:nth-of-type(3) li:first-of-type img:nth-of-type(2) {
     max-width: 100%;
     height: auto;
-
     position:absolute;
 }
 
 main section:nth-of-type(3):has( [value="zwartgrijs"]:checked ) img[alt="Product1foto2"] {
 	z-index: 2;
 }
+/* EINDE WERKENDE RADIOS PRODUCT 1 */
 
-/* EINDE PRODUCT 1 */
-
-
+/* ALGEMENE STIJLEN VAN DE PRODUCTBLOKJES */
+/* NAAM PRODUCT */
 main section:nth-of-type(3) ul > li > p:first-of-type {
-    color:var(--color-lichtetext);
+    color:var(--text);
     font-family: var(--font-textroboto);
-    /* margin-top: 1vh; */
     font-weight: 300;
     font-size: 1em;
-
     margin: 0;
 }
 
+/* PRIJS PRODUCT */
 main section:nth-of-type(3) ul > li > p:nth-of-type(2) {
-    color: var(--color-text);
+    color: var(--text);
     font-size: 1em;
-    /* margin-bottom: 10px; */
     font-weight: 500;
-
     margin: 0;
 }
 
 main section:nth-of-type(3) button {
-    background-color: var(--color-whitebutton);
-    color: var(--color-textwhitebutton);
+    background-color: var(--bgwbutton);
+    color: var(--textwbutton);
     font-family: var(--font-textroboto);
-    border: 1px solid black;
+    border: var(--borderwbutton);
     font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     font-weight: 500;
-
-
-    padding: 5px;
-    width: 60%;
+    padding: 7px;
+    width: 80%;
 }
 
 main section:nth-of-type(3) button:hover {
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
+    background-color: var(--bgbutton);
+    color: var(--textbutton);
 
 }
+/* EINDE ALGEMENE STIJLEN VAN DE PRODUCTBLOKJES */
 
-
-/* RADIOBUTTONS */
-
+/* RADIOBUTTONS ALGEMEEN*/
 main section:nth-of-type(3) form {
 	display:flex;
 	gap:1em;
 }
 
-
 input[type="radio"] {
+    border:solid 1px grey; 
 	appearance:none;
-	
 	width:1.5em;
 	height:1.5em;
 	margin:0;
-	background-color:white;
 	border-radius:50%;
-	
 	display:grid;
 	place-items:center;
 }
 
-/* 1eproduct */
-
+/* RADIOBUTTONS 1EPRODUCT */
 input[type="radio"][value="beigegrijs"] {
 	background-image:linear-gradient(45deg, rgb(140, 140, 75) 50%, rgb(65, 65, 65) 0);
 }
@@ -213,8 +192,7 @@ input[type="radio"][value="zwartgrijs"] {
 	background-image:linear-gradient(45deg, black 50%, gray 0);
 }
 
-/* 2eproduct */
-
+/* RADIOBUTTONS 2EPRODUCT */
 input[type="radio"][value="bruinrood"] {
 	background-image:linear-gradient(45deg, rgb(152, 100, 43) 50%, rgb(182, 11, 49) 0);    
 }
@@ -223,14 +201,12 @@ input[type="radio"][value="zwart"] {
 background-color:black;
 }
 
-/* 3eproduct */
-
+/* RADIOBUTTONS 3EPRODUCT */
 input[type="radio"][value="blauworanje"] {
 	background-image:linear-gradient(45deg, rgb(9, 108, 159), rgb(178, 106, 44) );
 }
 
-/* 4eproduct */
-
+/* RADIOBUTTONS 4EPRODUCT */
 input[type="radio"][value="bruinzwart"] {
 	background-image:linear-gradient(45deg, rgb(67, 41, 19) 50%, black 0);    
 }
@@ -239,8 +215,7 @@ input[type="radio"][value="beige"] {
 background-color:rgb(202, 173, 131);
 }
 
-
-
+/* RADIOBUTTONS GESELECTEERD STYLING */
 input[type="radio"]:focus-visible {
 	outline: solid 1px black;
 	outline-offset:.2em;
@@ -251,83 +226,99 @@ input[type="radio"]:checked {
     outline-offset: 3px; 
 }
 
-
-
-
 input[type="radio"]:checked::after {
-	/* content:""; */
-	
 	display:block;
 	width:1em;
-	/* aspect-ratio: 1; */
-	
 	background-color:white;
 	border:solid 1px black;
 	border-radius:50%;
 }
 
 
-
-/* FILTERMENU */
+/* BEGIN FILTERMENU */
 /* IN EN UITKLAPPEN */
-main nav:nth-of-type(1) { 
+dialog {
+    position: fixed;
+    display: block;
+    translate:-100%;
+    transition:0.2s;
+    z-index: 4;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+    height: 100%;
+    width: 70%;
+    border: none;
+}
+
+dialog::backdrop {
+	background-color: black;
+    opacity: 50%;
+}
+
+/* main dialog[open] { 
     position:fixed;
     left:0;
     right:30%;
-    top:9vh;
-    bottom:0vh;
+    top:0;
+    bottom:0;
     translate:-100%;
     transition:0.2s;
-
     z-index: 4;
     overflow-y: auto;
-}
+    background-color: black;
+} */
 
-main nav:nth-of-type(1).toonfilterMenu {
+main dialog.toonfilterMenu {
+    transform: translateX(0);
     translate:0;
     background-color: white;
 }
 
-main nav:nth-of-type(1) p:nth-of-type(1){ 
+/* CONTENT */
+main dialog p:nth-of-type(1){ 
     font-size: 1.2em;
     margin: 0;
     padding: 15px;
     font-weight: 500;
 }
 
-  main nav:nth-of-type(1) details img{
-    width: 3vw;
+main dialog details img{
+    width: 0.8em;
 }
 
-main nav:nth-of-type(1) details summary{
+main dialog details {
+    border-top: 0.5px solid lightgrey ;
+    border-bottom: 0.5px solid lightgrey;
+    padding: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+main dialog details summary{
     list-style: none; 
     font-size: 1em;
     font-weight: 300;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-transform: none;
 }
 
-main nav:nth-of-type(1) li{
+main dialog li{
     font-family: var(--font-textroboto);
     list-style-type: none;
 
 }
 
-main nav:nth-of-type(1) details {
-    border-top: 1px solid lightgrey ;
-    border-bottom: 1px solid lightgrey;
-    padding: 20px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-main nav:nth-of-type(1) details[open] summary img {
+main dialog details[open] summary img {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
 }
 
-main nav:nth-of-type(1) button{ 
+main dialog button{ 
     background-color: var(--color-blackbutton);
     color: var(--color-textblackbutton);
     font-family: var(--font-textroboto);
@@ -346,24 +337,36 @@ main nav:nth-of-type(1) button{
     left: 10%;
 }
 
-
-
-main nav:nth-of-type(1) label{
+main dialog label{
     font-family: var(--font-textroboto);
     list-style-type: none;
     display: flex;
-
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
+    font-weight: 300;
+    gap: 10px;    
     padding: 10px;
-    gap: 10px;
+    padding-left: 20px;
+
 }
 
-main nav:nth-of-type(1) input[type="radio"] {
+main dialog input[type="radio"] {
 	width:1.5em;
 	height:1.5em;
 	margin:0;
 	background-color:white;
 	border-radius:50%;
-	border: solid 2px black ;
+	border: solid 1px black ;
+}
+
+main dialog input[type="radio"]:checked {
+    content: ''; 
+    background-color: black;
+    border-radius: 50%; 
+}
+
+main dialog input[type="radio"]:checked::after {
+	display:block;
+	width:1em;
+	background-color:white;
+	border:solid 1px black;
+	border-radius:50%;
 }

@@ -14,16 +14,16 @@ function openMenu() {
   }
 
 
+
 // FILTERMENU
-
-
 const filtermenuOpenButton = document.querySelector("main section:nth-of-type(2) button");
-const filtermenu = document.querySelector("main nav:nth-of-type(1)");
+const filtermenu = document.querySelector("main dialog");
 
 filtermenuOpenButton.onclick = openfilterMenu;
 
 function openfilterMenu() {
     filtermenu.classList.toggle("toonfilterMenu");
     console.log("test")
+    filtermenu.showModal()
   }
 

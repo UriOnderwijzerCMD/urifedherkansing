@@ -142,7 +142,8 @@
 
 		<!-- FILTERMENU -->
 
-		<nav>
+		<dialog>
+			<form method="dialog">
 			<p>Winterschoenen</p>
 			<details>
 				<summary>Sorteren op <img src="images/dropdownicon.png" alt="Pijl omlaag"></summary>
@@ -153,16 +154,16 @@
 				   <input type="radio" name="theme" value="light"> Prijzen: Laag naar Hoog
 				   </label>
 				   <label>
-					<input type="radio" name="theme" value="dark"> Prijzen: Hoog naar Laag
+					<input type="radio" name="theme" value="light"> Prijzen: Hoog naar Laag
 				</label> 
 				<label>
-					<input type="radio" name="theme" value="dark"> Beoordeling
+					<input type="radio" name="theme" value="light"> Beoordeling
 				</label> 
 				<label>
-					<input type="radio" name="theme" value="dark"> Meest verkocht
+					<input type="radio" name="theme" value="light"> Meest verkocht
 				</label> 
 				<label>
-					<input type="radio" name="theme" value="dark"> Wat is er nieuw?
+					<input type="radio" name="theme" value="light"> Wat is er nieuw?
 				</label> 
 			</details>
 			
@@ -195,9 +196,13 @@
 			<details>
 				<summary>Kleur <img src="images/dropdownicon.png" alt="Pijl omlaag"></summary>
 					<ul>
-					  <li>Placerholder</li>
-					  <li>Placerholder</li>
-					  <li>Placerholder</li>
+					  <li><label><input type="radio" name="zwart" value="zwart"> Zwart</label></li>
+					  <li><label><input type="radio" name="bruin" value="bruin"> Bruin</label></li>
+					  <li><label><input type="radio" name="groen" value="groen"> Groen</label></li>
+					  <li><label><input type="radio" name="beige" value="beige"> Beige</label></li>
+					  <li><label><input type="radio" name="rood" value="red"> Rood</label></li>
+					  <li><label><input type="radio" name="blauw" value="blauw"> Blauw</label></li>
+					  <li><label><input type="radio" name="grijs" value="grijs"> Grijs</label></li>
 					</ul>
 			</details>
 
@@ -220,8 +225,8 @@
 			</details>
 
 			<button>Resultaten Bekijken (4)</button>
-
-		</nav>
+		</form>
+		</dialog>
 
 <section> 
 <!-- MAIN SECTION TYPE 1 -->
@@ -236,7 +241,7 @@
 <h2 class="visually-hidden">Filterknop en aantal producten</h2>
 	<button>
 		Filter
-		<img src="images/filtericon.png" alt="Icon">
+		<img class="invert" src="images/filtericon.png" alt="Icon">
 	</button>
 
 	<p>20 Producten</p>
@@ -406,17 +411,6 @@
 	</section>
 
 	<!-- FOOTER SECTION 3 -->
-
-	<section>
-		<ul>
-			<li><img src="images/tnflogo.png" alt="North Face logo"></a></li>
-			<li><img src="images/zoeklogo.png" alt="zoekicoon"></a></li>
-			<li><img src="images/taslogo.png" alt="winkeltas"></a></li>				
-			<li><img src="images/menulogo.png" alt="menu"></li>
-		</ul>
-	</section>
-
-	<!-- FOOTER SECTION 4 -->
 	<section>
 		<h2>Abonneer u op onze nieuwsbrief</h2>
 
@@ -436,7 +430,7 @@
 
 	</section>
 
-	<!-- FOOTER SECTION 5 -->
+	<!-- FOOTER SECTION 4 -->
 	<section>
 		<h2>Vind een winkel</h2>
 
@@ -445,7 +439,7 @@
 		<button>Zoek winkel</button>
 	</section>
 
-	<!-- FOOTER SECTION 6 -->
+	<!-- FOOTER SECTION 5 -->
 	<section>
 		<h2>Volg The North Face</h2>
 
@@ -458,7 +452,7 @@
 
 	</section>
 
-	<!-- FOOTER SECTION 7 -->
+	<!-- FOOTER SECTION 6 -->
 	<section>
 		<h2 class="visually-hidden">FAQ</h2>
 		<ul>
