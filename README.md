@@ -161,10 +161,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   WCAG Checklist 2
   Dit is de tweede WCAG check die ik heb uitgevoerd, deze keer op mijn eigen site, op dit formulier gelden de vakjes onder 'test 2' voor mijn site, en 'test 1' voor de echte northface site.
   <img src="readme-images/WCAGCL2.1.jpg" width="375px">
-  <img src="readme-images/WCAGCL2.2jpg" width="375px">
-  <img src="readme-images/WCAGCL2.3jpg" width="375px">
-  <img src="readme-images/WCAGCL2.4jpg" width="375px">
-  <img src="readme-images/WCAGCL2.5jpg" width="375px">
+  <img src="readme-images/WCAGCL2.2.jpg" width="375px">
+  <img src="readme-images/WCAGCL2.3.jpg" width="375px">
+  <img src="readme-images/WCAGCL2.4.jpg" width="375px">
+  <img src="readme-images/WCAGCL2.5.jpg" width="375px">
 </details>
 
 
