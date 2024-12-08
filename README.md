@@ -7,9 +7,6 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
-
-
-
 ## Jij
 
 <details open>
@@ -26,7 +23,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   -Videos
   -extra microinteractie
   -States van controls++ (forms, inputs, links…)
-  -svg icons animeren
+  -svg icons
   -()has
  
 </details>
@@ -86,9 +83,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Homepagina: 
   <img src="readme-images/breakdownschetsfed.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### Hamburgermenu: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
 </details>
 
 
@@ -119,13 +113,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   Maryam
   -Ik heb moeite met mijn carousel, ik krijg mijn bg-img niet te zien.
-  -
-
-  Splinter
-  -
-  -
-
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -138,10 +125,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
-
-
-
-
 ## Voortgang 2 (week 3)
 
 <details>
@@ -152,12 +135,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
   Mijn vragen:
   -Hoe moet ik mijn dropdowns precies maken? Is het een button of een id/label?
@@ -170,9 +147,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
@@ -180,11 +154,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  -De grootste verbetering die ik heb is dat ik een dark mode heb, de echte site heeft dit niet wat ik best wel verassend vind omdat het een groot bedrijf is, en vooral met de kleuren die northface gebruikt (Eigenlijk alleen zwart en wit) het erg makkelijk is om een dark mode aan te maken.
+  -Ook kan je bij mij de video in de site pauzeren, bij de echte site kan dit niet en blijft hij automatisch in een loop afspelen.
+  -Verder heb ik ook de font sizes verbeterd, tijdens het voortgang gesprek met Sanne zei hij dat een font eigenlijk minimaal 16px/1em groot moet zijn om goed leesbaar te zijn. Op de echte site waren er best veel stukken tekst die kleiner dan 1em waren. Op mijn site is alle tekst minimaal 1em groot.
+  
+  WCAG Checklist 2
+  Dit is de tweede WCAG check die ik heb uitgevoerd, deze keer op mijn eigen site, op dit formulier gelden de vakjes onder 'test 2' voor mijn site, en 'test 1' voor de echte northface site.
+  <img src="readme-images/WCAGCL2.1.jpg" width="375px">
+  <img src="readme-images/WCAGCL2.2jpg" width="375px">
+  <img src="readme-images/WCAGCL2.3jpg" width="375px">
+  <img src="readme-images/WCAGCL2.4jpg" width="375px">
+  <img src="readme-images/WCAGCL2.5jpg" width="375px">
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
@@ -212,34 +193,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Eindgesprek (week 5)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/mijnhomepagefoto.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Ik heb eigenlijk alles wat ik bij dit project heb gedaan geleerd, vooral in de laatste 4 weken, ik heb het gevoel dat ik code nu veel beter begrijp en makkelijker zonder hulp kan coderen. In de toekomst als ik weer moet coderen weet ik nu veel beter hoe ik netter kan coderen met grids, roots en selectoren.
-  Verder ben ik trots op de product pagina met de radiobuttons dat dat me gelukt is.
+  Ik heb eigenlijk alles wat ik nu over code weet geleerd, aan het begin van de opdracht werkte ik heel slordig met margins en classes zonder root en met slechte html structuur, dit zorgde ervoor dat ik later steeds terug moest gaan om mijn ouder code te corrigeren. Dit kostte best wat tijd maar was wel een goed leerpunt, ik heb hierdoor geleerd om met grid te werken wat ik erg handig vind en als ik ooit weer moet coderen zeker ga gebruiken.
+  Het belangrijkste wat ik heb geleerd is eigenlijk om wanneer je begint met coderen alle algemene stylen/code neer te zetten, zoals algemene stijlen voor je button of h2s en je root. Hiermee maak je het jezelf voor later zo veel makkelijker, omdat als je iets wilt veranderen in je code je niet elke button op moet zoeken in je code en steeds moet veranderen, maar je kan het gewoon op 1 punt veranderen en dan ben je klaar.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Verder vond ik het ook leuk hoe makkelijk het eigenlijk is om een dark mode te maken.
 
+  <img src="readme-images/mijnproductpagefoto.png" width="375px" alt="top">
+  Waar ik trots op ben is eigenlijk de hele tweede pagina, vooral het gedeelte met de producten, ik vind dat het er heel goed uit is komen te zien en de radiobuttons werken ook.
+
+  <img src="readme-images/filtermenufoto.png" width="375px" alt="top">
+  Met het filtermenu ben ik ook blij, deze vind ik er ook goed uitzien en voordat ik ermee begon twijfelde ik of het me zou lukken, maar het is me gelukt. 
 
   ### Dit was lastig/Is niet gelukt:
-  Wat me niet gelukt is een filteroptie maken, omdat ik hier niet genoeg tijd voor over had, dit vind ik best wel jammer omdat het een leuke test geweest zou zijn.
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Ik had graag de filter/sorteeroptie werken willen maken, dit lijkt me een leuke uitdaging omdat ik al een beetje inzie hoe het zou kunnen werken/hoe ik het zou moeten doen.
 </details>
-
-
-
-
 
 ## Bronnenlijst
 
@@ -249,5 +225,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. Vooral de presentaties en Codepens op DLO.
   2. https://www.a11yproject.com/posts/how-to-hide-content/ om h2s te hiden.
   3. Sanne voor de basis van de radiobuttons
+  4. Sanne voor de basis van de dialog
 
 </details>

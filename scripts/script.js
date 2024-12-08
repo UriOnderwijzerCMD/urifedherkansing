@@ -22,7 +22,7 @@ const filtermenu = document.querySelector("main dialog");
 filtermenuOpenButton.onclick = openfilterMenu;
 
 function openfilterMenu() {
-    filtermenu.classList.toggle("toonfilterMenu");
+    // filtermenu.classList.toggle("toonfilterMenu");
     console.log("test")
     filtermenu.showModal()
   }

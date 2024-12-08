@@ -46,6 +46,7 @@ main section:nth-of-type(2){
     justify-content: space-between;
     padding: 15px;
     border-bottom: 1px solid #ddd;
+    align-items: center;
 }
 
 main section:nth-of-type(2) button{
@@ -61,6 +62,7 @@ main section:nth-of-type(2) button{
     font-weight: 400;
     padding: 5px;
     width: 30%;
+    height: 2.5em;
 }
 
 main section:nth-of-type(2) button:hover {
@@ -84,7 +86,7 @@ main section:nth-of-type(2) p{
     font-size: 1em;
     margin: 0;
 }
-/* EIND SECTION 3 */
+/* EIND SECTION 2 */
 
 /* SECTION 3 UL MET PRODUCTEN */
 main section:nth-of-type(3) ul {
@@ -198,7 +200,7 @@ input[type="radio"][value="bruinrood"] {
 }
 
 input[type="radio"][value="zwart"] {
-background-color:black;
+    background-color:black;
 }
 
 /* RADIOBUTTONS 3EPRODUCT */
@@ -237,10 +239,12 @@ input[type="radio"]:checked::after {
 
 /* BEGIN FILTERMENU */
 /* IN EN UITKLAPPEN */
-dialog {
+
+/* HIER ZAT IK VAST OMDAT ER EEN SPATIE TUSSEN DIALOG EN [OPEN] STOND */
+dialog[open] {
     position: fixed;
     display: block;
-    translate:-100%;
+    background-color: var(--bg);
     transition:0.2s;
     z-index: 4;
     overflow-y: auto;
@@ -257,25 +261,6 @@ dialog::backdrop {
     opacity: 50%;
 }
 
-/* main dialog[open] { 
-    position:fixed;
-    left:0;
-    right:30%;
-    top:0;
-    bottom:0;
-    translate:-100%;
-    transition:0.2s;
-    z-index: 4;
-    overflow-y: auto;
-    background-color: black;
-} */
-
-main dialog.toonfilterMenu {
-    transform: translateX(0);
-    translate:0;
-    background-color: white;
-}
-
 /* CONTENT */
 main dialog p:nth-of-type(1){ 
     font-size: 1.2em;
@@ -289,6 +274,7 @@ main dialog details img{
 }
 
 main dialog details {
+    background-color: var(--bg);
     border-top: 0.5px solid lightgrey ;
     border-bottom: 0.5px solid lightgrey;
     padding: 10px;
@@ -319,11 +305,11 @@ main dialog details[open] summary img {
 }
 
 main dialog button{ 
-    background-color: var(--color-blackbutton);
-    color: var(--color-textblackbutton);
+    background-color: var(--bgbutton);
+    color: var(--textbutton);
     font-family: var(--font-textroboto);
     border: 1px solid black;
-    font-size: 1.2em;
+    font-size: 1.125em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,10 +317,11 @@ main dialog button{
     font-weight: 500;
     padding: 5px;
     width: 80%;
-    height: 10%;
-    position: absolute;
+    height: 4em;
+    position: sticky;
     bottom: 20px;
     left: 10%;
+    margin-top: 20px;
 }
 
 main dialog label{
@@ -354,7 +341,7 @@ main dialog input[type="radio"] {
 	margin:0;
 	background-color:white;
 	border-radius:50%;
-	border: solid 1px black ;
+	border:solid 1px grey; 
 }
 
 main dialog input[type="radio"]:checked {
@@ -370,3 +357,87 @@ main dialog input[type="radio"]:checked::after {
 	border:solid 1px black;
 	border-radius:50%;
 }
+
+/* FILTEROPTIE KLEUR IN FILTERMENU */
+main dialog details:nth-of-type(2) ul {
+    background-color: var(--bg);
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+main dialog details:nth-of-type(2) li label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+} 
+
+main dialog details:nth-of-type(2) li label input[type="radio"]{
+    width:1.8em;
+	height:1.8em;
+    border: none; 
+    outline: 1px solid var(--bgbutton); 
+    outline-offset: 4px; 
+} 
+
+dialog input[type="radio"][value="zwart"] {
+	background-color:black;
+}
+
+dialog input[type="radio"][value="bruin"] {
+	background-color:brown;
+}
+
+dialog input[type="radio"][value="groen"] {
+	background-color:lime;
+}
+
+dialog input[type="radio"][value="rood"] {
+	background-color:red;
+}
+
+dialog input[type="radio"][value="blauw"] {
+	background-color:blue;
+}
+
+dialog input[type="radio"][value="grijs"] {
+	background-color:grey;
+}
+
+/* FILTEROPTIE MAAT IN FILTERMENU */
+main dialog details:nth-of-type(3) ul {
+    background-color: var(--bg);
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+main dialog details:nth-of-type(3) ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+main dialog details:nth-of-type(3) button {
+    font-family: var(--font-textroboto);
+    background-color: var(--bgwbutton);
+    color: var(--textwbutton);
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+    width: 2.5em;
+    height: 2em;
+    border: none;
+} 
+
+main dialog details:nth-of-type(3) button:hover {
+    background-color: var(--bgbutton);
+    color: var(--textbutton);
+} 

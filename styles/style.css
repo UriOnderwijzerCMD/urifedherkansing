@@ -1,22 +1,4 @@
-/* @font-face voor de fonts         */
-/* @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:wght@400;500;700&display=swap'); */
-
-
-/**************/
-/* CSS REMEDY */
-/**************/
-
-
-
-/* ALLE KLEUREN IN DE ROOT */
-/* --color-textred: black; */
-/* font size clamp */
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-
+/* @font-face voor de fonts */
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('ttf');
@@ -46,6 +28,9 @@
   }
 
 
+/**************/
+/* ROOT */
+/**************/
 
 :root {
 color-scheme: light dark;
@@ -75,7 +60,6 @@ font-size: 1em;
 
 /* INVERT VOOR DE ICONS */
 --invert: 0;
-
 }
 
 @media (prefers-color-scheme: dark) {
@@ -103,11 +87,14 @@ font-size: 1em;
 /****************/
 
 /* ALGEMEEN */
+:focus-visible {
+    outline: 3px solid blue; 
+    outline-offset: 3px; 
+}
 
 p,h1,h2{
     font-family: var(--font-textroboto);
 }
-
 
 html, body {
     background-color: var(--bg);
@@ -123,6 +110,7 @@ main{
 .invert{
     filter: invert(var(--invert));
 }
+
 /* EINDE ALGEMEEN */
 
 /* HEADER */
@@ -153,7 +141,7 @@ nav:nth-of-type(2) ul li {
 
 nav ul li:nth-child(1) img {
     width: 4em;
-    margin-right: 22vw;
+    margin-right: 30vw;
 }
 
 nav ul li:nth-child(2) img,
@@ -165,6 +153,7 @@ nav ul li:nth-child(4) img {
 
 nav ul li:nth-child(4) svg {
     width: 1.5em;
+    height: 1.5em;
     cursor: pointer;  
 }
 /* EINDE HEADER */
@@ -220,7 +209,7 @@ footer section button{
     font-family: var(--font-textroboto);
     font-size: var(--buttonfontsize);  
     border: none;
-    font-weight: 300;
+    font-weight: 400;
     border-radius: 4em;
     display: flex;
     justify-content: center;
@@ -298,7 +287,7 @@ footer section:nth-of-type(2) img{
 }
 
 footer section:nth-of-type(2) li{
-    color:var(--color-lichtetext);
+    color:var(--text);
     font-size: 1em;
     font-weight: 300;
 }
@@ -439,7 +428,7 @@ summary {
     background-color: var(--bg);
     padding-left: 20px;
     padding-right: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 details[open] summary img {
@@ -478,6 +467,7 @@ header nav:nth-of-type(1) li{
     border-top: 1px solid lightgrey ;
     border-bottom: 1px solid lightgrey;
     padding: 20px;
+    list-style-type: none;
 }
 /* EINDE HAMBURGER SUMMARY */
 
@@ -486,7 +476,7 @@ header nav:nth-of-type(1) {
     position:fixed;
     left:0;
     right:0;
-    top:8vh;
+    top:7%;
     bottom:0vh;
     translate:-100%;
     transition:0.2s;
@@ -499,8 +489,8 @@ header nav:nth-of-type(1).toonMenu {
 
 /* SUMMARY IN DE SUMMARY */
 header nav details:nth-of-type(1) details:nth-of-type(1) ul li{
-    color:var(--color-lichtetext);
-    font-size: 15px;
+    color:var(--text);
+    font-size: 1em;
     font-weight: 300;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -512,7 +502,7 @@ header nav details:nth-of-type(1) details:nth-of-type(1) ul li:nth-of-type(1){
 
 header nav details:nth-of-type(1) details:nth-of-type(1) ul li a{
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--text);
 }
 
 .visually-hidden {
