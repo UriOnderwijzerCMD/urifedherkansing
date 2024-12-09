@@ -114,7 +114,7 @@ main section:nth-of-type(3) img {
 main section:nth-of-type(3) li:first-of-type img:nth-of-type(1) {
     max-width: 100%;
     height: auto;
-    z-index: 2;
+    z-index: 1;
 }
 
 main section:nth-of-type(3) li:first-of-type img:nth-of-type(2) {
@@ -123,7 +123,7 @@ main section:nth-of-type(3) li:first-of-type img:nth-of-type(2) {
     position:absolute;
 }
 
-main section:nth-of-type(3):has( [value="zwartgrijs"]:checked ) img[alt="Product1foto2"] {
+main section:nth-of-type(3):has( [value="zwartgrijs"]:checked ) img[alt="Chilkat V Lace-waterdichte schoenen zwart"] {
 	z-index: 2;
 }
 /* EINDE WERKENDE RADIOS PRODUCT 1 */
